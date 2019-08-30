@@ -12,7 +12,9 @@ class Places extends React.Component {
 
 	render() {
 		return (
-			<div>(this.state.name)</div>
+			<div></div>
 		)
 	}
 }
+
+export default Places
