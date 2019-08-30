@@ -13,14 +13,15 @@ class Places extends React.Component {
 			{title: 'January trip', price: 200, location: 'Thailand'}
 		]
 	}
-	// let num = this.state.places.length
 
 	render() {
 
+		let num = this.state.places.length
 
 		return (
 		<div>
-			<div>
+			<h1>{num} Places</h1>
+			<div className="places">
 				{this.state.places.map((place, index) => {return  (<Thumbnail key={index} place={place} />)})}
 			</div>
 			<div><Favorites /></div>
@@ -34,4 +35,3 @@ class Places extends React.Component {
 export default Places
 
 			// <div><Thumbnail /></div>
-			// <h1>{num} Places</h1>
