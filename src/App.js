@@ -5,7 +5,7 @@ import Places from './components/Places'
 class App extends React.Component {
 	render() {
 		return (
-			<div>
+			<div className="places">
 				<Places />
 			</div>
 		)
