@@ -6,13 +6,16 @@ class Places extends React.Component {
 			{title: 'November trip', price: 250, location: 'Mexico'},
 			{title: 'December trip', price: 500, location: 'Portugal'},
 			{title: 'April trip', price: 400, location: 'California'},
-			{title: 'May trip', price: 400, location: 'Las Vegas'}
+			{title: 'May trip', price: 400, location: 'Las Vegas'},
+			{title: 'January trip', price: 200, location: 'Thailand'}
 		]
 	}
 
 	render() {
+
+		let num = this.state.places.length
 		return (
-			<div></div>
+			<div><h1>{num} Places</h1></div>
 		)
 	}
 }
