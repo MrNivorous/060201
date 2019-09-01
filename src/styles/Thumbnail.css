@@ -1,3 +1,14 @@
 .thumbnails {
-	background-color: red;
+	border: 1px solid gray;
+	padding: 10%;
+}
+
+.like {
+	font-size: 2rem;
+	font-family: Arial;
+	background-color:lightblue;
+}
+
+.liked {
+	background-color: bluee
 }

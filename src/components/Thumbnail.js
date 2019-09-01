@@ -4,14 +4,21 @@ import '../styles/Thumbnail.css'
 class Thumbnail extends React.Component {
 
 state = {
+	active: false
 }
+
+toggleClass() {
+		 let currentState = this.state.active
+		 this.setState({ active: !currentState })
+ }
 
 render () {
 	return (
 			<div className="thumbnails">
-					{this.props.place.title}
-					${this.props.place.price}
-					{this.props.place.location}
+					<p><h3>{this.props.place.title}</h3></p>
+					<p>${this.props.place.price}</p>
+					<p>{this.props.place.location}</p>
+					<button className="like" onClick={() => this.toggleClass}>Like</button>
 			</div>
 	)
 }
